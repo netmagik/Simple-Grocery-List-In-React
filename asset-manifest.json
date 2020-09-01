@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Simple-Grocery-List-In-React/static/css/main.8a18c7c4.chunk.css",
+    "main.js": "/Simple-Grocery-List-In-React/static/js/main.1ae018be.chunk.js",
+    "main.js.map": "/Simple-Grocery-List-In-React/static/js/main.1ae018be.chunk.js.map",
+    "runtime-main.js": "/Simple-Grocery-List-In-React/static/js/runtime-main.6c11ded2.js",
+    "runtime-main.js.map": "/Simple-Grocery-List-In-React/static/js/runtime-main.6c11ded2.js.map",
+    "static/js/2.bdae2990.chunk.js": "/Simple-Grocery-List-In-React/static/js/2.bdae2990.chunk.js",
+    "static/js/2.bdae2990.chunk.js.map": "/Simple-Grocery-List-In-React/static/js/2.bdae2990.chunk.js.map",
+    "index.html": "/Simple-Grocery-List-In-React/index.html",
+    "precache-manifest.b8e65686ce598f4e18a15a88a3903229.js": "/Simple-Grocery-List-In-React/precache-manifest.b8e65686ce598f4e18a15a88a3903229.js",
+    "service-worker.js": "/Simple-Grocery-List-In-React/service-worker.js",
+    "static/css/main.8a18c7c4.chunk.css.map": "/Simple-Grocery-List-In-React/static/css/main.8a18c7c4.chunk.css.map",
+    "static/js/2.bdae2990.chunk.js.LICENSE.txt": "/Simple-Grocery-List-In-React/static/js/2.bdae2990.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c11ded2.js",
+    "static/js/2.bdae2990.chunk.js",
+    "static/css/main.8a18c7c4.chunk.css",
+    "static/js/main.1ae018be.chunk.js"
+  ]
+}
