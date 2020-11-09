@@ -4,6 +4,7 @@ class EditProductForm extends React.Component {
 
 
     handleChange = (event) => {
+        console.log(event.currentTarget.value);
         const updatedProduct = {
             ...this.props.product,
             [event.currentTarget.name]: event.currentTarget.value
