@@ -9,6 +9,20 @@ class App extends React.Component {
     products: {}
   };
 
+  componentDidMount() {
+    const localStorageRef = localStorage.getItem('products')
+    console.log(localStorage)
+    if (localStorageRef) {
+      this.setState({products: JSON.parse(localStorageRef)})
+    }
+  }
+
+  componentDidUpdate() {
+    console.log('It Updated!')
+    console.log(this.state.products);
+    localStorage.setItem('products', JSON.stringify(this.state.products));
+  }
+
   updateProduct = (key, updatedProduct) => {
     const products = {...this.state.products};
     products[key] = updatedProduct;
@@ -29,42 +43,40 @@ class App extends React.Component {
     }
 
     loadSampleProducts = () => {
-      this.setState({ products: sampleProducts });
+      this.setState({ products: sampleProducts});
     }
-
-  // onFormSubmit = (product) => {
-  //   this.setState({ products: [...this.state.products, product] });
-  // }
-
 
   render() {
     
     return (
       <div className="container">
-        <h2>Grocery List</h2>
-        <p>Add Grocery Items to the List</p>
+        <div className="flex-row">
+          <div className="flex-large">
+            <h2>Grocery List</h2>
+            <p>Add Grocery Items to the List</p>
 
-        <ul>
-          {Object.keys(this.state.products).map(key => (
-            <Products 
-            key={key}
-            index={key}
-            details={this.state.products[key]}
-          />
-          ))}
+            <ul>
+              {Object.keys(this.state.products).map(key => (
+                <Products 
+                key={key}
+                index={key}
+                details={this.state.products[key]}
+              />
+              ))}
+              
+            </ul>
+          </div>
           
-        </ul>
-
-      <Inventory
-          product={this.state.products} 
-          removeProduct={this.removeProduct}
-          addProduct={this.addProduct} 
-          updateProduct={this.updateProduct}
-          loadSampleProducts={this.loadSampleProducts}
-        />
-        {/* <h3>Add New</h3> */}
-        {/* <Form onFormSubmit={this.onFormSubmit} /> */}
-
+          <div className="flex-large">
+            <Inventory
+                product={this.state.products} 
+                removeProduct={this.removeProduct}
+                addProduct={this.addProduct} 
+                updateProduct={this.updateProduct}
+                loadSampleProducts={this.loadSampleProducts}
+              />
+          </div>
+        </div>
       </div>
     )
   }

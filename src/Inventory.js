@@ -8,6 +8,10 @@ class Inventory extends React.Component {
         return (
             <div>
                 <h2>Inventory</h2>
+
+                <AddProductForm addProduct={this.props.addProduct}/>
+                <button onClick={this.props.loadSampleProducts}>Load Sample Products</button>
+                
                 {Object.keys(this.props.product).map(key =>
                     <EditProductForm
                         key={key}
@@ -17,11 +21,6 @@ class Inventory extends React.Component {
                         removeProduct={this.props.removeProduct}
                         />
                 )}
-
-                    <AddProductForm 
-                        addProduct={this.props.addProduct}
-                        />
-                <button onClick={this.props.loadSampleProducts}>Load Sample Products</button>
             </div>
         )
     }

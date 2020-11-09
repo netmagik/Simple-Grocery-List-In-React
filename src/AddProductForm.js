@@ -1,20 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
-
-
-const Formstyle = styled.div`
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-input {
-    width: 50%;
-    margin-right: 20px;
-}
-    `;
-
 
 class AddProductForm extends React.Component {
     nameRef = React.createRef();
@@ -33,8 +17,7 @@ class AddProductForm extends React.Component {
 
 
     render() {
-        return (
-            <Formstyle>           
+        return (          
             <form onSubmit={this.createProduct}>
                 <input 
                     type="text"
@@ -51,8 +34,6 @@ class AddProductForm extends React.Component {
                     
                 <button type="Submit">Add Item</button>
             </form>
-            
-            </Formstyle>
         );
     }
 }
