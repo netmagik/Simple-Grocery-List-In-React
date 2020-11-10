@@ -54,8 +54,7 @@ class App extends React.Component {
         <div className="flex-row">
           <div className="flex-large">
             <h2>Grocery List</h2>
-            <p>Add Grocery Items to the List</p>
-
+            {Object.keys(this.state.products).length > 0 ? ( 
             <ul>
               {Object.keys(this.state.products).map(key => (
                 <Products 
@@ -63,9 +62,12 @@ class App extends React.Component {
                 index={key}
                 details={this.state.products[key]}
               />
-              ))}
-              
+              ))} 
             </ul>
+            ) : (
+              <p>The list has 0 items. <br />
+              Add Grocery Item or Load Sample Products.</p>
+            )}
           </div>
           
           <div className="flex-large">
