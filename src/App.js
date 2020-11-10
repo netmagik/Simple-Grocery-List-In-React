@@ -38,8 +38,7 @@ class App extends React.Component {
 
     addProduct = product => {
       const products = {...this.state.products};
-      products[`product${Date.now()}`] = product;
-      this.setState({products});
+      this.setState({products: {...this.state.products, product}});
     }
 
     loadSampleProducts = () => {
