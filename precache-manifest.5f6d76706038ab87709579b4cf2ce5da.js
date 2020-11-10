@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f14ce214d1033bc03c63be90b516fe5",
+    "revision": "093e59d7bdca6405b068e80ccd50d7a2",
     "url": "/Simple-Grocery-List-In-React/index.html"
   },
   {
-    "revision": "6c2ce314729504d50b19",
+    "revision": "d3a709e03d83b0ec155d",
     "url": "/Simple-Grocery-List-In-React/static/css/main.8a18c7c4.chunk.css"
   },
   {
-    "revision": "148b4a305f391bdae9a1",
-    "url": "/Simple-Grocery-List-In-React/static/js/2.675f64c6.chunk.js"
+    "revision": "e5c185d4c078c9cda3cc",
+    "url": "/Simple-Grocery-List-In-React/static/js/2.4f512dbc.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Simple-Grocery-List-In-React/static/js/2.675f64c6.chunk.js.LICENSE.txt"
+    "url": "/Simple-Grocery-List-In-React/static/js/2.4f512dbc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c2ce314729504d50b19",
-    "url": "/Simple-Grocery-List-In-React/static/js/main.57622de5.chunk.js"
+    "revision": "d3a709e03d83b0ec155d",
+    "url": "/Simple-Grocery-List-In-React/static/js/main.73e21522.chunk.js"
   },
   {
     "revision": "2b08bff79a0ce6bbf168",
