@@ -43,7 +43,8 @@ class App extends React.Component {
     }
 
     loadSampleProducts = () => {
-      this.setState({ products: sampleProducts});
+      this.setState({ products: {...this.state.products, ...sampleProducts},
+      });
     }
 
   render() {
